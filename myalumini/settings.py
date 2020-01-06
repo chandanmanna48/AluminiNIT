@@ -25,7 +25,7 @@ SECRET_KEY = '5semx)y!3s7*e59$^_w%8yro(e(9uxi@8_(k!f#jejyt5^k$r8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost','127.0.0.1']
+ALLOWED_HOSTS = ['localhost','127.0.0.1','chandanmanna48.pythonanywhere.com']
 
 
 # Application definition
@@ -146,7 +146,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS=(os.path.join(BASE_DIR,'static'),)
-STATIC_ROOT = os.path.join(BASE_DIR,'staticfiles')
+STATIC_ROOT = '/home/chandanmanna48/AluminiNIT/static'
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
