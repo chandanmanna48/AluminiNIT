@@ -62,9 +62,8 @@ def user_register_details(request):
         receiver = request.user.email
         #send_mail(subject,message,sender,[receiver],fail_silently=False)
        # request.user.first_visit()
-        return render(request,'Home/index.html')
+        return redirect('/')
         #return render(request,'profile.html',{'profile':profile})
-
     else:
         return render(request,'user_register.html')
 
