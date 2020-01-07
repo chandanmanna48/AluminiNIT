@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '5semx)y!3s7*e59$^_w%8yro(e(9uxi@8_(k!f#jejyt5^k$r8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['localhost','127.0.0.1','chandanmanna48.pythonanywhere.com']
 
@@ -162,7 +162,7 @@ ACCOUNT_UNIQUE_EMAIL = True
 ACCOUNT_USER_MODEL_USERNAME_FIELD = None
 ACCOUNT_USERNAME_REQUIRED = False
 
-SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = True
 
 SOCIAL_AUTH_PIPELINE = (
 
