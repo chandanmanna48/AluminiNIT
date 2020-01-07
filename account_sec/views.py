@@ -73,7 +73,7 @@ def logout(request):
     return redirect('/')
 
 def profile(request):
-    print(request.user.email)
+    #print(request.user.email)
     #user = User.objects.get(email=request.user.email)
     #print(user.profile.regdno)
     uemail = request.user.email
