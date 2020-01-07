@@ -149,7 +149,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = '/home/chandanmanna48/AluminiNIT/static'
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_ROOT = '/home/chandanmanna48/AluminiNIT/media'
 
 
 SITE_ID = 1
