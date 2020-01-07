@@ -60,7 +60,7 @@ def user_register_details(request):
         message = 'Welcome to Nalanda Institute Of Technology,' + request.user.first_name +'You are the Alumini of our College, Your account is created please wait till Admin approve you, then you can See your Profile on the Alumini Cell, Have a great day.'
         sender = 'NitAlumini2020@gmail.com'
         receiver = request.user.email
-        send_mail(subject,message,sender,[receiver],fail_silently=False)
+        #send_mail(subject,message,sender,[receiver],fail_silently=False)
        # request.user.first_visit()
         return redirect('profile')
         #return render(request,'profile.html',{'profile':profile})
@@ -137,7 +137,7 @@ def accept(request,email):
     message = 'Congratulations,' +first_name + '. Now you are approved and you can find your Profile on the Alumini Cell .'
     sender = 'NitAlumini2020@gmail.com'
     receiver = email
-    send_mail(subject,message,sender,[receiver],fail_silently=False)
+    #send_mail(subject,message,sender,[receiver],fail_silently=False)
     return redirect('approval')
 
 def remove(request,email):
