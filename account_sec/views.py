@@ -180,9 +180,9 @@ def search_result(request):
 
 def contact_mail(request):
     name = request.POST['name_sender']
-    email = request.POST['email_sender']
+    email_sender = request.POST['email_sender']
     message = request.POST['message_sender']
-    send_mail(name,message,email,['NitAlumini2020@gmail.com'],fail_silently=False)
+    send_mail(name,message,email_sender,['NitAlumini2020@gmail.com'],fail_silently=False)
     result_msg = "Email Sent Successfully "
     return redirect('/',{'result_msg':result_msg})
 
