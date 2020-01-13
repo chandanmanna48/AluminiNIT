@@ -1,5 +1,11 @@
 {% extends 'base.html'%} {% load static %} {% block content %}
 
+{% if messages %}
+<div class="alert alert-success" role="alert">
+    {{messages}}
+</div>
+{% endif %}
+
 <!-- Welcome Area Start -->
 <section class="welcome-area">
     <div class="welcome-slides owl-carousel">

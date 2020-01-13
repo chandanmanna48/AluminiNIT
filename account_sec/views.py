@@ -183,7 +183,8 @@ def contact_mail(request):
     email = request.POST['email_sender']
     message = request.POST['message_sender']
     send_mail(name,message,email,['NitAlumini2020@gmail.com'],fail_silently=False)
-    return redirect('/')
+    messages = "Email Sent Successfully "
+    return redirect('/',{'messages':messages})
 
 
 
