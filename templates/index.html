@@ -1,8 +1,6 @@
-{% extends 'base.html'%} {% load static %} {% block content %}
-
-{% if messages %}
+{% extends 'base.html'%} {% load static %} {% block content %} {% if result_msg %}
 <div class="alert alert-success" role="alert">
-    {{messages}}
+    {{result_msg}}
 </div>
 {% endif %}
 
