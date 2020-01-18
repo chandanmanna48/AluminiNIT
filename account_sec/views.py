@@ -184,7 +184,7 @@ def contact_mail(request):
     message = request.POST['message_sender']
     send_mail(name,message,email_sender,['NitAlumini2020@gmail.com'],fail_silently=False)
     result_msg = "Email Sent Successfully "
-    return render(request,'/',{'result_msg':result_msg})
+    return render(request,'',{'result_msg':result_msg})
 
 
 
