@@ -85,7 +85,7 @@ def profile(request):
 
 def alumini_cell(request):
     user = User.objects.all()
-    eleven = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True')
+    eleven = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(is_master='False')
     twelve = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True')
     thirteen = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True')
     fourteen = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True')
