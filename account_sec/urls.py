@@ -17,5 +17,5 @@ urlpatterns = [
     path('delete_image/<int:pk>/',views.delete_image,name='delete_image'),
     path('search_result',views.search_result,name='search_result'),
     path('contact_mail',views.contact_mail,name='contact_mail'),
-   # path('info',views.info,name='info'),
+    path(r'show_alumni/(?p<batch>\w+)',views.show_alumni,name='show_alumni'),
 ]
