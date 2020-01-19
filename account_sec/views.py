@@ -97,163 +97,163 @@ def show_alumni(request,batch):
     objs = None
     cbatch = ''
     if batch == 'cse-2011':
-        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2011 CSE'
     elif batch == 'mech-2011':
-        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2011 MECHANICAL'
     elif batch == 'civil-2011':
-        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2011 CIVIL'
     elif batch == 'ece-2011':
-        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2011 ELECTRONICS'
     elif batch == 'ee-2011':
-        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2011').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2011 ELECTRICAL'
 
     elif batch == 'cse-2012':
-        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2012 CSE'
     elif batch == 'mech-2012':
-        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2012 MECHANICAL'
     elif batch == 'civil-2012':
-        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2012 CIVIL'
     elif batch == 'ece-2012':
-        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2012 ELECTRONICS'
     elif batch == 'ee-2012':
-        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2012').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2012 ELECTRICAL'
 
     elif batch == 'cse-2013':
-        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2013 CSE'
     elif batch == 'mech-2013':
-        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2013 MECHANICAL'
     elif batch == 'civil-2013':
-        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2013 CIVIL'
     elif batch == 'ece-2013':
-        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2013 ELECTRONICS'
     elif batch == 'ee-2013':
-        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2013').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2013 ELECTRICAL'
 
     elif batch == 'cse-2014':
-        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2014 CSE'
     elif batch == 'mech-2014':
-        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2014 MECHANICAL'
     elif batch == 'civil-2014':
-        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2014 CIVIL'
     elif batch == 'ece-2014':
-        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2014 ELECTRONICS'
     elif batch == 'ee-2014':
-        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2014').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2014 ELECTRICAL'
 
     elif batch == 'cse-2015':
-        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2015 CSE'
     elif batch == 'mech-2015':
-        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2015 MECHANICAL'
     elif batch == 'civil-2015':
-        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2015 CIVIL'
     elif batch == 'ece-2015':
-        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2015 ELECTRONICS'
     elif batch == 'ee-2015':
-        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2015').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2015 ELECTRICAL'
 
     elif batch == 'cse-2016':
-        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2016 CSE'
     elif batch == 'mech-2016':
-        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2016 MECHANICAL'
     elif batch == 'civil-2016':
-        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2016 CIVIL'
     elif batch == 'ece-2016':
-        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2016 ELECTRONICS'
     elif batch == 'ee-2016':
-        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2016').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2016 ELECTRICAL'
 
     elif batch == 'cse-2017':
-        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2017 CSE'
     elif batch == 'mech-2017':
-        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2017 MECHANICAL'
     elif batch == 'civil-2017':
-        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2017 CIVIL'
     elif batch == 'ece-2017':
-        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2017 ELECTRONICS'
     elif batch == 'ee-2017':
-        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2017').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2017 ELECTRICAL'
 
     elif batch == 'cse-2018':
-        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2018 CSE'
     elif batch == 'mech-2018':
-        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2018 MECHANICAL'
     elif batch == 'civil-2018':
-        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2018 CIVIL'
     elif batch == 'ece-2018':
-        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2018 ELECTRONICS'
     elif batch == 'ee-2018':
-        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2018').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2018 ELECTRICAL'
 
     elif batch == 'cse-2019':
-        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2019 CSE'
     elif batch == 'mech-2019':
-        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2019 MECHANICAL'
     elif batch == 'civil-2019':
-        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2019 CIVIL'
     elif batch == 'ece-2019':
-        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2019 ELECTRONICS'
     elif batch == 'ee-2019':
-        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2019').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2019 ELECTRICAL'
 
     elif batch == 'cse-2020':
-        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE')
+        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CSE').filter(is_master='False')
         cbatch = ' 2020 CSE'
     elif batch == 'mech-2020':
-        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL')
+        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='MECHANICAL').filter(is_master='False')
         cbatch = ' 2020 MECHANICAL'
     elif batch == 'civil-2020':
-        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL')
+        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='CIVIL').filter(is_master='False')
         cbatch = ' 2020 CIVIL'
     elif batch == 'ece-2020':
-        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS')
+        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRONICS').filter(is_master='False')
         cbatch = ' 2020 ELECTRONICS'
     elif batch == 'ee-2020':
-        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL')
+        objs = User.objects.filter(profile__passout_year='2020').order_by('profile__regdno').filter(is_approved='True').filter(profile__branch='ELECTRICAL').filter(is_master='False')
         cbatch = ' 2020 ELECTRICAL'
 
     return render(request,'show_alumni.html',{'objs':objs,'cbatch':cbatch})
