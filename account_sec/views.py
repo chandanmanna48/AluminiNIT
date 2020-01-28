@@ -345,7 +345,7 @@ def regdno_search_result(request):
 
 def name_search_result(request):
     name = request.POST['top-search-bar-name']
-    li = name.split('')
+    li = list(name.split(' '))
     res = User.objects.filter((first_name == li[0] and last_name == li[1]) or first_name == li[0])
 
     return render(request,'search_result.html',{'res':res})
