@@ -339,7 +339,7 @@ def email_search_result(request):
 
 def regdno_search_result(request):
     regdno = request.POST['top-search-bar-regdno']
-    res = User.objects.get(regdno = regdno)
+    res = User.objects.get(profile__regdno = regdno)
 
     return render(request,'search_result.html',{'res':res})
 
