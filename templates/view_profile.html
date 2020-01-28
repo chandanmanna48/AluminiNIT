@@ -30,7 +30,7 @@
         <div class="container box_1620">
             <div class="banner_inner d-flex align-items-center">
                 <div class="banner_content">
-                    <div class="media">
+                    <div class="media container">
                         <div class="d-flex float-left w-50 h-75">
                             {% if profile.profile_pic == "user.socialaccount_set.all.0.get_avatar_url" %}
                             <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" alt="" class="img-fluid mx-auto d-block"> {% elif user.profile.profile_pic.url %}
