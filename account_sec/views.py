@@ -283,7 +283,7 @@ def show_profile(request,email):
 
 def approval(request):
 
-    users = User.objects.filter(is_approved = 'False')
+    users = User.objects.filter(is_approved = 'False').exclude(profile=None)
     return render(request,'approval.html',{'users':users})
 
 def accept(request,email):
@@ -346,7 +346,7 @@ def regdno_search_result(request):
 def name_search_result(request):
     name = request.POST['top-search-bar-name']
     li = list(name.split(' '))
-    res = User.objects.filter(first_name = li[0])
+    res = User.objects.filter(first_name = li[0].lower())
 
     return render(request,'search_result.html',{'res':res})
 
