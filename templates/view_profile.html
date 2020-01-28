@@ -31,10 +31,10 @@
             <div class="banner_inner d-flex align-items-center">
                 <div class="banner_content">
                     <div class="media">
-                        <div class="d-flex float-left w-50 h-10 container">
+                        <div class="d-flex float-left col-sm-6 col-md-6 col-lg-4">
                             {% if profile.profile_pic == "user.socialaccount_set.all.0.get_avatar_url" %}
                             <img src="{{ user.socialaccount_set.all.0.get_avatar_url }}" alt="" class="img-fluid mx-auto d-block"> {% elif user.profile.profile_pic.url %}
-                            <img src="{{user.profile.profile_pic.url}}" class="img-fluid mx-lg-auto d-block img-thumbnail" style="border-radius: 10px;width:auto;"> {% else %}
+                            <img src="{{user.profile.profile_pic.url}}" class="img-responsive fit-image" style="border-radius: 10px;width:auto;"> {% else %}
                             <img src="{{user.profile.profile_pic}}" class="img-fluid mx-lg-auto d-block img-thumbnail" style="border-radius: 10px;"> {% endif %}
                         </div>
                         <div class="media-body">
