@@ -331,9 +331,22 @@ def delete_image(request,pk):
    
     return redirect('profile')
 
-def search_result(request):
+def email_search_result(request):
     email = request.POST['top-search-bar-email']
     res = User.objects.get(email = email)
+
+    return render(request,'search_result.html',{'res':res})
+
+def regdno_search_result(request):
+    regdno = request.POST['top-search-bar-regdno']
+    res = User.objects.get(regdno = regdno)
+
+    return render(request,'search_result.html',{'res':res})
+
+    def name_search_result(request):
+    regdno = request.POST['top-search-bar-name']
+    li = regdno.split()
+    res = User.objects.get( (first_name = li[0] and last_name=li[1]) or first_name=li[0])
 
     return render(request,'search_result.html',{'res':res})
 

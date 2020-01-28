@@ -82,14 +82,19 @@
                         <!-- Close Button -->
                         <button type="button" class="btn close-btn" data-dismiss="modal"><i class="fa fa-times"></i></button>
                         <!-- Form -->
-                        <form method="POST" action="{% url 'search_result' %}">
+                        <form method="POST" action="{% url 'email_search_result' %}">
                             {% csrf_token %}
                             <input type="email" name="top-search-bar-email" class="form-control" placeholder="Type Email and hit enter...">
                             <button type="submit" value="submit" name="submit">Search</button>
                         </form>
-                        <form method="POST" action="{% url 'search_result' %}">
+                        <form method="POST" action="{% url 'regdno_search_result' %}">
                             {% csrf_token %}
-                            <input type="email" name="top-search-bar-email" class="form-control" placeholder="Type Email and hit enter...">
+                            <input type="number" name="top-search-bar-regdno" class="form-control" placeholder="Type Regdno and hit enter...">
+                            <button type="submit" value="submit" name="submit">Search</button>
+                        </form>
+                        <form method="POST" action="{% url 'name_search_result' %}">
+                            {% csrf_token %}
+                            <input type="text" name="top-search-bar-name" class="form-control" placeholder="Type Name and hit enter...">
                             <button type="submit" value="submit" name="submit">Search</button>
                         </form>
                         <!-- Search Button -->
