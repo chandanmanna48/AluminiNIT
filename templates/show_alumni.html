@@ -18,7 +18,7 @@
                         <div class="single-show-item mb-30">
                             {% if obj.profile.profile_pic.url %}
                             <img src="{{obj.profile.profile_pic.url}}" height="200px" width="400px" alt=""> {% else %}
-                            <img src="{{uploaded_file_url}}" alt=""> {% endif %}
+                            <img src="{{uploaded_file_url}}" height="200px" width="400px" alt=""> {% endif %}
                             <div class="overlay-content">
                                 <div class="text-center">
                                     <span><h4 style="color: white;">{{obj.profile.regdno}}</h4></span>
