@@ -52,6 +52,7 @@ class Gallery(models.Model):
     title = models.CharField(max_length = 100,null=True,blank=True)
     description = models.TextField(null=True,blank=True)
     images = models.FileField(upload_to='gallery')
+    created_time = models.DateTimeField(default=timezone.now)
 
     def __str__(self):
         return self.email
